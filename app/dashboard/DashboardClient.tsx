@@ -18,18 +18,18 @@ import type { WorkoutSummary } from "@/data/workouts";
 interface DashboardClientProps {
   workouts: WorkoutSummary[];
   selectedDateIso: string;
+  isToday: boolean;
 }
 
 export default function DashboardClient({
   workouts,
   selectedDateIso,
+  isToday,
 }: DashboardClientProps) {
   const router = useRouter();
   const date = new Date(`${selectedDateIso}T00:00:00`);
 
   const formattedDate = format(date, "do MMM yyyy");
-  const isToday =
-    format(date, "yyyy-MM-dd") === format(new Date(), "yyyy-MM-dd");
 
   function handleDateSelect(selected: Date | undefined) {
     if (!selected) return;
@@ -41,7 +41,7 @@ export default function DashboardClient({
       {/* Header */}
       <div>
         <h1 className="text-2xl font-semibold tracking-tight">Dashboard</h1>
-        <p className="text-sm text-muted-foreground mt-0.5" suppressHydrationWarning>
+        <p className="text-sm text-muted-foreground mt-0.5">
           {isToday ? "Today" : formattedDate}
         </p>
       </div>

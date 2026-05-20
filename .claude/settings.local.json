@@ -13,7 +13,9 @@
       "Bash(Get-Content package.json)",
       "Bash(Select-String -Pattern \"clerk|auth\")",
       "Bash(xargs grep -l \"isoDate\\\\|day\\\\.date\")",
-      "Bash(xargs grep -l \"new.*CalendarDay\\\\|CalendarDay\\(\")"
+      "Bash(xargs grep -l \"new.*CalendarDay\\\\|CalendarDay\\(\")",
+      "Bash(node -e \"require\\('zod'\\); console.log\\('zod available'\\)\")",
+      "Bash(npx shadcn@latest add input label --yes)"
     ]
   },
   "enableAllProjectMcpServers": true,

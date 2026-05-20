@@ -24,8 +24,9 @@ export default async function DashboardPage({
   const selectedDate = new Date(`${selectedDateIso}T00:00:00`);
 
   const workouts = await getWorkoutsForDate(user.id, selectedDate);
+  const isToday = selectedDateIso === format(new Date(), "yyyy-MM-dd");
 
   return (
-    <DashboardClient workouts={workouts} selectedDateIso={selectedDateIso} />
+    <DashboardClient workouts={workouts} selectedDateIso={selectedDateIso} isToday={isToday} />
   );
 }
