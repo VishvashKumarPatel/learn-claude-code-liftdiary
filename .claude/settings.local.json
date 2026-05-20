@@ -4,7 +4,13 @@
       "Bash(npm install *)",
       "mcp__neon__list_projects",
       "mcp__neon__run_sql",
-      "Bash(gh repo *)"
+      "Bash(gh repo *)",
+      "Bash(findstr /i \"clerk\\\\|auth\\\\|next-auth\")",
+      "Bash(Get-Content package.json)",
+      "Bash(Select-String -Pattern \"clerk|auth\")",
+      "Bash(xargs grep -l \"isoDate\\\\|day\\\\.date\")",
+      "Bash(xargs grep -l \"new.*CalendarDay\\\\|CalendarDay\\(\")",
+      "Bash(git add *)"
     ]
   },
   "enableAllProjectMcpServers": true,
