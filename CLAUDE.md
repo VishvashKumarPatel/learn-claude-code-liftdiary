@@ -9,6 +9,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Key docs to consult:
 - `docs/ui.md` — component library and styling conventions
 - `docs/data-fetching.md` — **mandatory** rules for data fetching, database queries, and user data isolation
+- `docs/auth.md` — **mandatory** Clerk authentication standards, the two-ID pattern, and session access rules
+- `docs/data-mutations.md` — **mandatory** rules for Server Actions, Zod validation, and `/data` mutation helpers
 
 ## Commands
 
