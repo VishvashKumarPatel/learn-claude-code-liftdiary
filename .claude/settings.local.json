@@ -6,7 +6,14 @@
       "mcp__neon__run_sql",
       "Bash(git merge *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit *)",
+      "Bash(git checkout *)",
+      "Bash(gh repo *)",
+      "Bash(findstr /i \"clerk\\\\|auth\\\\|next-auth\")",
+      "Bash(Get-Content package.json)",
+      "Bash(Select-String -Pattern \"clerk|auth\")",
+      "Bash(xargs grep -l \"isoDate\\\\|day\\\\.date\")",
+      "Bash(xargs grep -l \"new.*CalendarDay\\\\|CalendarDay\\(\")"
     ]
   },
   "enableAllProjectMcpServers": true,

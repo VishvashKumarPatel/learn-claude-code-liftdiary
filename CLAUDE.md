@@ -2,6 +2,14 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## IMPORTANT: Documentation First
+
+**Before generating any code**, always read the relevant files in the `/docs` directory. These docs define design decisions, data models, UI conventions, and feature specs for this project. Code that contradicts the docs is incorrect — the docs are the source of truth.
+
+Key docs to consult:
+- `docs/ui.md` — component library and styling conventions
+- `docs/data-fetching.md` — **mandatory** rules for data fetching, database queries, and user data isolation
+
 ## Commands
 
 ```bash
