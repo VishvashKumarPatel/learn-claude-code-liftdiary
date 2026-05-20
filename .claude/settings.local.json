@@ -10,7 +10,9 @@
       "Bash(Select-String -Pattern \"clerk|auth\")",
       "Bash(xargs grep -l \"isoDate\\\\|day\\\\.date\")",
       "Bash(xargs grep -l \"new.*CalendarDay\\\\|CalendarDay\\(\")",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git checkout *)"
     ]
   },
   "enableAllProjectMcpServers": true,
