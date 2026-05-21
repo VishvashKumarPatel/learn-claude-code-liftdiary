@@ -15,7 +15,9 @@
       "Bash(xargs grep -l \"isoDate\\\\|day\\\\.date\")",
       "Bash(xargs grep -l \"new.*CalendarDay\\\\|CalendarDay\\(\")",
       "Bash(node -e \"require\\('zod'\\); console.log\\('zod available'\\)\")",
-      "Bash(npx shadcn@latest add input label --yes)"
+      "Bash(npx shadcn@latest add input label --yes)",
+      "Bash(git pull *)",
+      "Bash(git push *)"
     ]
   },
   "enableAllProjectMcpServers": true,
