@@ -2,7 +2,7 @@
   "permissions": {
     "allow": [
       "Bash(npm install *)",
-      "mcp__neon__list_projects",
+      "mcp__neon__list_projects",      
       "mcp__neon__run_sql",
       "Bash(git merge *)",
       "Bash(git add *)",
