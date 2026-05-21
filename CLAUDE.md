@@ -11,6 +11,8 @@ Key docs to consult:
 - `docs/data-fetching.md` — **mandatory** rules for data fetching, database queries, and user data isolation
 - `docs/auth.md` — **mandatory** Clerk authentication standards, the two-ID pattern, and session access rules
 - `docs/data-mutations.md` — **mandatory** rules for Server Actions, Zod validation, and `/data` mutation helpers
+- `docs/server-components.md` — **mandatory** Server Component conventions: async params, auth order, `notFound()`
+- `docs/routing.md` — **mandatory** route structure, `/dashboard` prefix convention, and two-layer middleware + page-level protection
 
 ## Commands
 

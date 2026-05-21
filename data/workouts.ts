@@ -3,6 +3,30 @@ import { workouts } from "@/db/schema";
 import { and, eq, gte, isNull, lt } from "drizzle-orm";
 import { addDays, startOfDay } from "date-fns";
 
+export async function getWorkoutById(userId: string, workoutId: string) {
+  return db.query.workouts.findFirst({
+    where: and(
+      eq(workouts.id, workoutId),
+      eq(workouts.userId, userId),
+      isNull(workouts.deletedAt)
+    ),
+  });
+}
+
+export async function updateWorkout(
+  userId: string,
+  workoutId: string,
+  name: string | null,
+  date: Date
+) {
+  const [workout] = await db
+    .update(workouts)
+    .set({ name, date, updatedAt: new Date() })
+    .where(and(eq(workouts.id, workoutId), eq(workouts.userId, userId)))
+    .returning();
+  return workout;
+}
+
 export async function createWorkout(userId: string, name: string | null, date: Date) {
   const [workout] = await db
     .insert(workouts)
